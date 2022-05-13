@@ -1,15 +1,19 @@
-import React from 'react';
+const Cat = ({ image, handleRandomClick, handleShowModal }) => {
+	return (
+		<>
+			<div className="btn-container">
+				<button className="btn" onClick={handleRandomClick}>
+					Randomize
+				</button>
 
-const Cat = ({ image, handleClick }) => {
-  return (
-    <>
-    <div>
-      <button className='btn' onClick={handleClick}>Randomize</button>
-    </div>
-    <div>
-      <img height={'50%'} width={'50%'} src={image} alt="" />
-    </div>
-    </>
-  )
-}
+				<button className="btn trigger" onClick={handleShowModal}>
+					Click me!
+				</button>
+			</div>
+			<div>
+				<img height={'50%'} width={'50%'} src={image} alt="" />
+			</div>
+		</>
+	);
+};
 export default Cat;
