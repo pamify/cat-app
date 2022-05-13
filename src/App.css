@@ -9,3 +9,19 @@
   padding: 10px;
   margin-bottom: 20px;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal {
+  background-color: gray;
+}
+
+.modal-content {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-bottom: 10px;
+}
